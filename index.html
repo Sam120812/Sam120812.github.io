@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- Linking the external css -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Personal Website</title>
 </head>
+
 <body>
-    Hello
+    <!-- Header > Nav > Logo & Menu -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Portfolio</a>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="left">
+            <div class="content">
+                <h2>Hi, I'm <span class="stroke-text">Samiksha Jadhav</span></h2>
+                <!-- <p>Web Designer & Developer</p> -->
+                <p>I am a first-year M.Tech. student in Computer Science and Engineering at IIITH, with a keen interest in software development and problem-solving. My academic journey has fueled my passion for exploring innovative technologies and developing practical solutions. I am committed to enhancing my skills through hands-on experience in internships and engaging in cutting-edge research projects. Eager to contribute to dynamic teams, I am focused on leveraging my technical abilities to drive impactful and forward-thinking projects.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="image">
+                <img src="images/profile.jpg" alt="name">
+            </div>
+            <div class="card">
+                <div class="rotate-45"></div>
+            </div>
+            <div class="card">
+                <div class="rotate-minus-45"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects Section -->
+    <section id="projects">
+        <div class="header">
+            <h1>My Projects</h1>
+
+        </div>
+        <div class="projects-list">
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/proj1.jpg" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Food Delivery Website</h2>
+                    <p class="project-desc">Developed an web application for managing food delivery operations
+                        Worked with Bootstrap for frontend, PHP for backend and MySQL as database</p>
+                    <div class="status">
+                        <a href="https://github.com/Samiksha1208/Food-Ordering-Website" class="view-more-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/proj2.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">News Website</h2>
+                    <p class="project-desc">It is a web based application that shows top headlines on the basis of various categories. Newsapi is used to take the news in the form of json.</p>
+                    <div class="status">
+                        <a href="https://github.com/Samiksha1208/newsapp" class="view-more-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/proj3.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Shell From Scratch</h2>
+                    <p class="project-desc">Built shell from scratch using system calls. Implimented basic system commands including ls,pwd,echo,cd,history,searcha and pinfo.</p>
+                    <div class="status">
+                        <a href="#" class="view-more-btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="exp">
+        <div class="header">
+            <h1>My Experience</h1>
+
+        </div>
+        <div class="projects-list">
+            <div class="project">
+                <div class="project-image">
+                    <img src="images/intern.png" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h2 class="project-title">Salahkaar Consultants</h2>
+                    <p class="project-desc">Developed new functionalities for HappyPerformer, an HR services platform.• Implemented the Case Management, Employee Master, and Resignation modules using PHP and MySQL.Led a team of tech interns, conducting daily scrum meetings to coordinate tasks and progress</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="background"></div>
+        <div class="contact-form">
+            <h1>Contact Me</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Enter your message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn" type="">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p style="text-align: center;">&copy; 2024 Portfolio. All Rights Reserved. <br> <a
+                    href="https://github.com/Samiksha1208">Samiksha Jadhav</a></p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
